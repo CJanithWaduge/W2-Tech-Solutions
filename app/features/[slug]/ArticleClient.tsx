@@ -8,6 +8,7 @@ import {
     Bookmark, Send, ChevronRight, X,
     Linkedin, Facebook, Link as LinkIcon
 } from 'lucide-react';
+import { getAssetPath } from '@/lib/utils';
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
@@ -117,7 +118,7 @@ export default function ArticleClient({ article }: { article: Article }) {
 
                     {article.coverImage && (
                         <div className="mb-12 relative rounded-3xl overflow-hidden aspect-video shadow-2xl border border-gray-800">
-                            <img src={article.coverImage} alt={article.title} className="w-full h-full object-cover" />
+                            <img src={getAssetPath(article.coverImage)} alt={article.title} className="w-full h-full object-cover" />
                             <div className="absolute inset-0 bg-gradient-to-t from-[#0a192f]/40 to-transparent" />
                         </div>
                     )}
@@ -139,7 +140,7 @@ export default function ArticleClient({ article }: { article: Article }) {
                             <div className="flex items-center gap-4">
                                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[var(--accent)] to-teal-500 p-0.5">
                                     <div className="w-full h-full rounded-full bg-[#0a192f] flex items-center justify-center overflow-hidden border border-gray-800">
-                                        {article.author.avatar ? <img src={article.author.avatar} alt={article.author.name} className="w-full h-full object-cover" /> : <User className="text-gray-500" />}
+                                        {article.author.avatar ? <img src={getAssetPath(article.author.avatar)} alt={article.author.name} className="w-full h-full object-cover" /> : <User className="text-gray-500" />}
                                     </div>
                                 </div>
                                 <div>
