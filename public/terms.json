@@ -1,0 +1,31 @@
+{
+    "lastUpdated": "2024-10-01T00:00:00Z",
+    "title": "Terms of Service",
+    "intro": "Welcome to W2 Tech Solutions. By accessing our website or downloading our software, you agree to the following terms. We’ve kept these simple and transparent, just like our code.",
+    "sections": [
+        {
+            "title": "1. Software License",
+            "content": "When you download or purchase a tool from W2 Tech Solutions (such as the Agency Management System), we grant you a personal, non-exclusive license to use the software for your business or personal needs.\n\nYou may: Install and use the software on your devices.\n\nYou may not: Resell, decompile, or redistribute our source code without explicit written permission."
+        },
+        {
+            "title": "2. Data Privacy & Ownership",
+            "content": "We build \"life-easier\" apps, but your data belongs to you.\n\nLocal Storage: Most of our tools store data locally on your device for maximum security.\n\nAnalytics: If you use our data analytics features, the insights generated are for your eyes only. W2 Tech Solutions does not \"harvest\" or sell your business data."
+        },
+        {
+            "title": "3. \"As-Is\" Professional Disclaimer",
+            "content": "While Janith Waduge (Lead Architect) builds every tool with extreme precision and security testing, the software is provided \"as-is.\"\n\nWe are not liable for business losses, data corruption, or hardware issues caused by the misuse of the software.\n\nPro Tip: Always maintain a regular backup of your inventory and creditor records."
+        },
+        {
+            "title": "4. Security Commitment",
+            "content": "We commit to the \"Security by Design\" philosophy. If a critical security vulnerability is found in any of our stable releases, we will prioritize a patch and notify users through our official channels."
+        },
+        {
+            "title": "5. Support & Updates",
+            "content": "Direct Dev Support is provided for all enterprise-level projects. While we strive to answer all inquiries within 48 hours, support is provided on a best-effort basis for free tools."
+        },
+        {
+            "title": "6. Governing Law",
+            "content": "These terms are governed by the laws of the Democratic Socialist Republic of Sri Lanka."
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "lastUpdated": "2026-02-01T00:00:00Z",
+    "title": "Privacy Policy",
+    "intro": "At W2 Tech Solutions, your privacy is not an afterthought—it is a core feature of our architecture. This policy explains how we handle your information across our website and our business applications.",
+    "sections": [
+        {
+            "title": "1. The \"Local-First\" Data Principle",
+            "content": "Most of our business tools, including the Agency Management System, are built with a \"Local-First\" architecture.\n\nBusiness Data: Sensitive information like your inventory, creditor lists, and profit margins are stored locally on your device.\n\nZero Access: W2 Tech Solutions does not have access to your local database. We cannot see, sell, or share your business data because we never receive it."
+        },
+        {
+            "title": "2. Information We Collect",
+            "content": "We only collect the bare minimum required to provide you with our services:\n\nCommunication Data: If you contact us for support or sign up for updates via email, we store your email address and name to respond to you.\n\nWebsite Analytics: We use basic, privacy-friendly analytics on our website to see which tools are popular. This does not identify you personally."
+        },
+        {
+            "title": "3. Data Analytics Engine",
+            "content": "Our software includes data analytics to help you track profit and trends.\n\nProcessing: All mathematical calculations and data visualizations (charts/graphs) are performed by the application on your hardware.\n\nPrivacy: No business-specific data points are uploaded to our servers during this analysis."
+        },
+        {
+            "title": "4. Security Measures",
+            "content": "We protect the integrity of the software you download through:\n\nCode Signing: Ensuring the app hasn't been tampered with since it left our \"vault.\"\n\nChecksum Verification: Providing SHA-256 hashes so you can verify your download is 100% malware-free."
+        },
+        {
+            "title": "5. Third-Party Services",
+            "content": "W2 Tech Solutions avoids third-party trackers. If an app requires an external service (like a cloud backup option you choose to enable), we will explicitly ask for your permission before any data leaves your device."
+        },
+        {
+            "title": "6. Your Rights",
+            "content": "Under global privacy standards and the laws of Sri Lanka, you have the right to:\n\nAccess any personal information we hold (like your support emails).\n\nRequest the deletion of your contact information from our records.\n\nBe informed of any changes to our data handling practices."
+        }
+    ]
+}

@@ -1,0 +1,244 @@
+{
+  "channels": [
+    {
+      "id": "security",
+      "title": "Security Reports",
+      "description": "For security vulnerabilities, responsible disclosure, and sensitive security matters",
+      "icon": "Shield",
+      "color": "red",
+      "responseTime": "< 24 hours",
+      "priority": "High",
+      "contactMethods": [
+        {
+          "type": "email",
+          "label": "Encrypted Email",
+          "value": "security@w2tech.example.com",
+          "encrypted": true
+        },
+        {
+          "type": "pgp",
+          "label": "PGP Key",
+          "value": "0xA1B2C3D4E5F6",
+          "fingerprint": "A1B2 C3D4 E5F6 7890 1234 5678 90AB CDEF A1B2 C3D4"
+        },
+        {
+          "type": "guideline",
+          "label": "Security Guidelines",
+          "value": "/security/reporting"
+        }
+      ],
+      "instructions": [
+        "Encrypt sensitive information with PGP",
+        "Include steps to reproduce",
+        "Provide affected versions",
+        "Do not disclose publicly before coordination"
+      ]
+    },
+    {
+      "id": "general",
+      "title": "General Inquiries",
+      "description": "For questions, feedback, collaboration ideas, and non-urgent matters",
+      "icon": "MessageCircle",
+      "color": "blue",
+      "responseTime": "< 48 hours",
+      "priority": "Normal",
+      "contactMethods": [
+        {
+          "type": "email",
+          "label": "Email",
+          "value": "hello@w2tech.example.com"
+        },
+        {
+          "type": "form",
+          "label": "Contact Form",
+          "value": "#contact-form"
+        }
+      ],
+      "instructions": [
+        "Be clear about your inquiry",
+        "Include relevant context",
+        "Specify if you need a response"
+      ]
+    },
+    {
+      "id": "support",
+      "title": "Support Requests",
+      "description": "For technical help, bug reports, and usage questions",
+      "icon": "HelpCircle",
+      "color": "green",
+      "responseTime": "< 72 hours",
+      "priority": "Normal",
+      "contactMethods": [
+        {
+          "type": "github",
+          "label": "GitHub Issues",
+          "value": "https://github.com/w2tech/issues"
+        },
+        {
+          "type": "docs",
+          "label": "Documentation",
+          "value": "/docs"
+        },
+        {
+          "type": "forum",
+          "label": "Community Forum",
+          "value": "https://community.w2tech.example.com"
+        }
+      ],
+      "instructions": [
+        "Check documentation first",
+        "Search existing issues",
+        "Include error messages",
+        "Provide system information"
+      ]
+    },
+    {
+      "id": "partnership",
+      "title": "Partnership Proposals",
+      "description": "For business collaborations, custom development, and enterprise inquiries",
+      "icon": "Handshake",
+      "color": "purple",
+      "responseTime": "< 72 hours",
+      "priority": "Business",
+      "contactMethods": [
+        {
+          "type": "email",
+          "label": "Business Email",
+          "value": "partners@w2tech.example.com"
+        },
+        {
+          "type": "form",
+          "label": "Proposal Form",
+          "value": "#contact-form"
+        },
+        {
+          "type": "calendar",
+          "label": "Schedule Call",
+          "value": "https://cal.com/w2tech"
+        }
+      ],
+      "instructions": [
+        "Include project scope",
+        "Specify timeline",
+        "Mention budget range",
+        "Provide company details"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How do I report a security vulnerability?",
+      "answer": "Use the Security Reports channel. Encrypt sensitive details with our PGP key. Include steps to reproduce, affected versions, and potential impact. We acknowledge within 24 hours and coordinate disclosure.",
+      "category": "security"
+    },
+    {
+      "question": "Where should I ask for technical help?",
+      "answer": "First check our documentation and search GitHub issues. If you don't find an answer, use the Support channel. Include error messages, steps to reproduce, and your system information for faster resolution.",
+      "category": "support"
+    },
+    {
+      "question": "Do you accept custom development requests?",
+      "answer": "Yes, through the Partnership channel. Include project requirements, timeline, and budget considerations. We'll schedule a call to discuss feasibility and provide a proposal.",
+      "category": "partnership"
+    },
+    {
+      "question": "What's your typical response time?",
+      "answer": "Security reports: < 24 hours. General inquiries: < 48 hours. Support requests: < 72 hours. Partnership proposals: < 72 hours. Responses may take longer on weekends or holidays.",
+      "category": "general"
+    },
+    {
+      "question": "Can I get a feature added to your tools?",
+      "answer": "Feature requests are welcome! Use the General channel or create a GitHub issue. Include use cases, expected behavior, and why it would be valuable. Community feedback helps prioritize features.",
+      "category": "general"
+    },
+    {
+      "question": "How do I verify your PGP key?",
+      "answer": "Our PGP key fingerprint is A1B2 C3D4 E5F6 7890 1234 5678 90AB CDEF A1B2 C3D4. It's also available on key servers and our GitHub profile. Always verify fingerprints before encrypted communication.",
+      "category": "security"
+    }
+  ],
+  "alternativeMethods": [
+    {
+      "type": "email",
+      "label": "General Email",
+      "value": "contact@w2tech.example.com",
+      "icon": "Mail"
+    },
+    {
+      "type": "github",
+      "label": "GitHub",
+      "value": "https://github.com/w2tech",
+      "icon": "Github"
+    },
+    {
+      "type": "x",
+      "label": "X",
+      "value": "https://x.com/w2tech_support",
+      "icon": "X"
+    },
+    {
+      "type": "linkedin",
+      "label": "LinkedIn",
+      "value": "https://linkedin.com/company/w2tech",
+      "icon": "Linkedin"
+    },
+    {
+      "type": "discord",
+      "label": "Discord Community",
+      "value": "https://discord.gg/w2tech",
+      "icon": "MessageSquare"
+    }
+  ],
+  "checklist": [
+    "Checked the documentation",
+    "Searched existing issues",
+    "Included relevant details",
+    "Provided version information",
+    "Attached screenshots/logs if applicable"
+  ],
+  "form": {
+    "categories": [
+      {
+        "id": "security",
+        "label": "Security Report"
+      },
+      {
+        "id": "general",
+        "label": "General Inquiry"
+      },
+      {
+        "id": "support",
+        "label": "Support Request"
+      },
+      {
+        "id": "partnership",
+        "label": "Partnership Proposal"
+      },
+      {
+        "id": "other",
+        "label": "Other"
+      }
+    ],
+    "validation": {
+      "name": {
+        "required": true,
+        "minLength": 2,
+        "maxLength": 100
+      },
+      "email": {
+        "required": true,
+        "pattern": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$"
+      },
+      "subject": {
+        "required": true,
+        "minLength": 5,
+        "maxLength": 200
+      },
+      "message": {
+        "required": true,
+        "minLength": 20,
+        "maxLength": 5000
+      }
+    }
+  }
+}

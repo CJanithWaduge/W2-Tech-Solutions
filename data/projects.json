@@ -1,0 +1,63 @@
+[
+  {
+    "id": "agency-management-system",
+    "name": "Agency Management System",
+    "version": "1.0.0",
+    "description": "A powerful desktop application for managing agency operations, inventory, sales, and financial records with interactive analytics.",
+    "longDescription": "Built for busy small business owners, this system provides a secure, offline-first environment to manage inventory, creditors, and expenses. It features a high-performance SQLite database, real-time sales visualization using Recharts, and professional PDF statement generation.",
+    "category": "Business & Finance",
+    "tags": [
+      "React 19",
+      "Electron",
+      "SQLite",
+      "Tailwind CSS",
+      "Data Analytics"
+    ],
+    "size": "203 MB",
+    "lastUpdated": "2026-02-05",
+    "security": {
+      "verified": true,
+      "signed": true,
+      "openSource": true,
+      "privacy": "100% Offline / Local Storage"
+    },
+    "compatibility": [
+      "windows"
+    ],
+    "downloadLinks": {
+      "windows": {
+        "url": "https://github.com/CJanithWaduge/Agency-Management-System/releases/tag/v1.0.0",
+        "size": "203 MB",
+        "format": "exe"
+      }
+    },
+    "versions": [
+      {
+        "version": "1.0.0",
+        "date": "2026-02-05",
+        "changes": [
+          "Initial stable release",
+          "Complete SQLite database integration",
+          "Interactive Dashboard with Recharts",
+          "PDF report generation with jsPDF",
+          "Creditor and Expense tracking modules"
+        ],
+        "downloadUrl": "https://github.com/CJanithWaduge/Agency-Management-System/releases/tag/v1.0.0"
+      }
+    ],
+    "features": [
+      "Real-time Business Metrics Dashboard",
+      "Automated Inventory & Stock Tracking",
+      "Sales & Route Management",
+      "Creditor Statement & Reminder System",
+      "Expense Breakdown Analytics",
+      "PDF Export for Financial Audits"
+    ],
+    "requirements": {
+      "os": "Windows 10/11",
+      "ram": "4GB minimum",
+      "storage": "250 MB available space",
+      "other": "No internet connection required"
+    }
+  }
+]

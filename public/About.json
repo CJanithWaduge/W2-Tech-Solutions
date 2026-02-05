@@ -1,0 +1,146 @@
+{
+    "profile": {
+        "name": "Janith Waduge",
+        "title": "System Architect & Full Stack Developer",
+        "bio": "Based in the historic city of Anuradhapura, I am a software engineer driven by the challenge of turning complex logic into secure, reliable systems. My journey began with a deep dive into academic fundamentals and evolved into building enterprise-grade tools like my Agency Management System. I founded W2 Tech Solutions to bridge the gap between high-end architecture and user-focused reliability.",
+        "quote": "Code is not just logic; it's a commitment to security and reliability.",
+        "avatar": "/images/about/avatar.jpeg",
+        "location": "Anuradhapura, Sri Lanka",
+        "email": "jwaduge819@gmail.com",
+        "github": "https://github.com/CJanithWaduge",
+        "linkedin": "www.linkedin.com/in/janithwaduge",
+        "headline": "Secure tools to organize your [[Busines]] and empower your next move."
+    },
+    "stats": {
+        "experience": 3,
+        "projects": 1,
+        "downloads": "auto",
+        "clients": "auto"
+    },
+    "philosophy": [
+        {
+            "title": "Secure Foundations",
+            "description": "Building security into the very first line of code, not as an afterthought.",
+            "points": [
+                "Application Hardening",
+                "Secure Logic Design",
+                "Privacy-First Architecture",
+                "Reliable Error Handling"
+            ],
+            "icon": "🛡️",
+            "color": "blue"
+        },
+        {
+            "title": "Scalable Engineering",
+            "description": "Creating systems that grow with the user's needs.",
+            "points": [
+                "Modular Code Structure",
+                "Cross-Platform Performance",
+                "Efficient Resource Usage",
+                "Future-Proof Tech Stacks"
+            ],
+            "icon": "⚡",
+            "color": "purple"
+        }
+    ],
+    "experience": [
+        {
+            "period": "2024 - Present",
+            "role": "Founder & Lead Architect",
+            "company": "W2 Tech Solutions",
+            "description": "Leading the development of secure desktop and web applications. Responsible for the end-to-end architecture of the Agency Management System (Electron/React).",
+            "achievements": [
+                "Built and launched v1.0 of Agency Management System",
+                "Designed a multi-layered security pipeline",
+                "Established a digital hub for secure software distribution"
+            ]
+        },
+        {
+            "period": "2021 - 2024",
+            "role": "Graduate Researcher & Developer",
+            "company": "University Projects",
+            "description": "Focused on Python, Java, and C development. Specialized in data analysis and system fundamentals.",
+            "achievements": [
+                "Completed 3 years of intensive software projects",
+                "Developed deep understanding of system logic",
+                "Applied data analysis to solve real-world problems"
+            ]
+        }
+    ],
+    "techStack": {
+        "frontend": [
+            "React",
+            "Next.js",
+            "Tailwind CSS"
+        ],
+        "backend": [
+            "Node.js",
+            "Python",
+            "Java"
+        ],
+        "desktop": [
+            "Electron",
+            "C"
+        ],
+        "tools": [
+            "Git",
+            "VS Code",
+            "Data Analysis Tools"
+        ]
+    },
+    "personalInterests": [
+        "Data Analyzing",
+        "YouTube Content Creation",
+        "Exploring System Architectures"
+    ],
+    "certifications": [],
+    "verificationProcess": [
+        {
+            "step": "01",
+            "title": "Analysis",
+            "description": "Deep dive into requirements and potential security architectural bottlenecks."
+        },
+        {
+            "step": "02",
+            "title": "Design",
+            "description": "Crafting modular blueprints with high-availability and security in mind."
+        },
+        {
+            "step": "03",
+            "title": "Development",
+            "description": "Writing clean, documented code with rigorous automated testing."
+        },
+        {
+            "step": "04",
+            "title": "Verification",
+            "description": "Multi-layered security audits and end-to-end performance testing."
+        },
+        {
+            "step": "05",
+            "title": "Deployment",
+            "description": "Secure delivery with continuous monitoring and rapid response systems."
+        }
+    ],
+    "contactChannels": [
+        {
+            "title": "Email",
+            "description": "For business inquiries",
+            "email": "jwaduge819@gmail.com"
+        },
+        {
+            "title": "GitHub",
+            "description": "Open source contributions",
+            "note": "@CJanithWaduge"
+        },
+        {
+            "title": "LinkedIn",
+            "description": "Professional networking",
+            "note": "janithwaduge"
+        },
+        {
+            "title": "Location",
+            "description": "Based in",
+            "note": "Anuradhapura, Sri Lanka"
+        }
+    ]
+}

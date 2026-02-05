@@ -1,0 +1,28 @@
+[
+  {
+    "id": "software-engineering-vs-ai",
+    "slug": "engineering-vs-ai-tools",
+    "title": "Why you should learn Software Engineering instead of just using AI tools",
+    "excerpt": "AI can write code, but it can't build systems. Discover why the fundamentals of engineering are more critical now than ever before.",
+    "content": "# Why you should learn Software Engineering instead of just using AI tools\n\nIn an era where AI can generate a React component in seconds, many ask: 'Why bother learning the hard way?' The answer lies in the difference between **writing code** and **engineering systems**.\n\n## 1. The 'Black Box' Problem\nAI tools are probabilistic, not deterministic. They provide answers that *look* right but can contain subtle logic flaws. Without a deep understanding of Software Engineering, you cannot debug what you do not understand. \n\n## 2. Architecture vs. Snippets\nAI is great at functions; humans are great at architecture. An AI might give you a secure login script, but it won't understand how that script impacts your entire system's scalability or how it interacts with a complex Electron middleware. \n\n## 3. The 'Senior' Edge\nAs a Senior Architect, I use AI to **improve my knowledge**, not to replace my brain. I use it to break down complex algorithms or explore new libraries faster. But when the system breaks at 2 AM, it's the engineering fundamentals—understanding memory management, network protocols, and design patterns—that fix the problem.\n\n## My Personal Growth Workflow\n- **Deep Work:** I use the **Pomodoro technique** to maintain intense focus on core logic.\n- **Code Review:** I start every day reviewing code (mine and the AI's) to ensure quality.\n- **AI as a Tutor:** I treat AI as a senior mentor that I constantly double-check. \n\n**Conclusion:** Don't just be a user of tools. Be the person who understands how the tools are built. That is where the real value lies in the modern tech landscape.",
+    "category": "Education",
+    "tags": [
+      "Software Engineering",
+      "AI",
+      "Career Growth",
+      "Architecture"
+    ],
+    "readTime": 6,
+    "publishDate": "2024-05-20",
+    "author": {
+      "name": "Janith Waduge",
+      "role": "Founder & Lead Architect",
+      "avatar": "/images/Articles/Articles 1/Author.jpeg"
+    },
+    "views": "auto",
+    "comments": 0,
+    "featured": true,
+    "coverImage": "/images/Articles/Articles 1/Cover.jpg",
+    "status": "published"
+  }
+]

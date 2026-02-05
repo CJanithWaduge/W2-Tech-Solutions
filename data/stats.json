@@ -1,0 +1,28 @@
+{
+  "totalDownloads": 7,
+  "installs": 7,
+  "modules": 1,
+  "activeUsers": 0,
+  "projectStats": {
+    "agency-pro": {
+      "downloads": 3,
+      "rating": 5,
+      "ratingCount": 3
+    },
+    "cli-suite": {
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0
+    },
+    "db-guard": {
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0
+    },
+    "agency-management-system": {
+      "downloads": 4,
+      "rating": 0,
+      "ratingCount": 0
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "brand": {
+    "logo": "/images/Logo/logo.png",
+    "name": "W2 Tech Solutions",
+    "tagline": "Empowering your every move",
+    "socials": {
+      "github": "https://github.com/CJanithWaduge",
+      "linkedin": "https://www.linkedin.com/in/janithwaduge/",
+      "email": "jwaduge819@gmail.com"
+    }
+  },
+  "globalStats": [
+    {
+      "label": "Total Downloads",
+      "value": "auto",
+      "icon": "download",
+      "apiSource": "/api/stats"
+    },
+    {
+      "label": "Modules",
+      "value": "auto",
+      "icon": "package"
+    },
+    {
+      "label": "Support Status",
+      "value": "Direct Dev Support",
+      "icon": "user-check"
+    }
+  ]
+}

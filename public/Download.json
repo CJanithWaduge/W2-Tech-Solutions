@@ -1,0 +1,43 @@
+{
+  "pageConfig": {
+    "searchPlaceholder": "What are you looking for today?",
+    "trustNote": "Every module in this repository is cryptographically signed and verified for production use. Ensure you follow the specific OS installation guides.",
+    "security": {
+      "isCodeSigned": true,
+      "checksumVerified": true
+    }
+  },
+  "globalStats": {
+    "totalProjects": 0,
+    "totalDownloads": 0,
+    "verifiedPercent": 100
+  },
+  "filters": {
+    "categories": [
+      "All Projects",
+      "Desktop Apps",
+      "Web Tools",
+      "CLI Tools",
+      "Libraries"
+    ],
+    "operatingSystems": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "All OS"
+    ],
+    "techStack": [
+      "React",
+      "Node.js",
+      "Electron",
+      "TypeScript",
+      "Python",
+      "Go",
+      "Rust",
+      "Next.js",
+      "Vite",
+      "SQLite"
+    ]
+  },
+  "projects": []
+}
