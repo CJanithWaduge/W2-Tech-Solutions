@@ -4,6 +4,7 @@ import { Clock, Calendar, Eye, MessageCircle, ArrowRight, Tag } from 'lucide-rea
 import { Article } from '@/types/article';
 import Link from 'next/link';
 import { useState } from 'react';
+import { getAssetPath } from '@/lib/utils';
 
 interface ArticleCardProps {
   article: Article;
@@ -76,7 +77,7 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
           {/* Large Image Section */}
           <div className="md:w-1/2 h-64 md:h-auto overflow-hidden relative">
             <img
-              src={article.coverImage || '/images/Articles/default-cover.jpg'}
+              src={article.coverImage ? getAssetPath(article.coverImage) : getAssetPath('/images/Articles/default-cover.jpg')}
               alt={article.title}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
@@ -156,7 +157,7 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
         {/* Image wrapper */}
         <div className="relative h-36 md:h-40 w-full overflow-hidden">
           <img
-            src={article.coverImage || '/images/Articles/default-cover.jpg'}
+            src={article.coverImage ? getAssetPath(article.coverImage) : getAssetPath('/images/Articles/default-cover.jpg')}
             alt={article.title}
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />

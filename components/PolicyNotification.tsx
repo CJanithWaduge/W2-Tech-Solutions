@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { X, ShieldAlert, Info } from 'lucide-react';
 import Link from 'next/link';
+import { getAssetPath } from '@/lib/utils';
 
 interface PolicyNotificationProps {
     endpoint: string;
@@ -27,7 +28,7 @@ export default function PolicyNotification({
     useEffect(() => {
         const checkVersion = async () => {
             try {
-                const res = await fetch(endpoint);
+                const res = await fetch(getAssetPath(endpoint));
                 if (!res.ok) return;
 
                 const data = await res.json();

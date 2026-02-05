@@ -3,6 +3,7 @@
 import { Github, Linkedin, Mail, Download } from 'lucide-react';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import { getAssetPath } from '@/lib/utils';
 
 type Props = { data?: any };
 
@@ -12,7 +13,7 @@ export default function Footer({ data: initialData }: Props) {
 
   useEffect(() => {
     if (!initialData) {
-      fetch('/HomePage.json')
+      fetch(getAssetPath('/HomePage.json'))
         .then((res) => res.json())
         .then((json) => setFooterData(json))
         .catch((err) => console.error('Error loading footer data:', err));

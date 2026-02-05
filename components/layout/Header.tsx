@@ -5,6 +5,8 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { getAssetPath } from '@/lib/utils';
+
 // HomePage configuration type
 interface BrandConfig {
   logo?: string;
@@ -22,7 +24,7 @@ export default function Header() {
 
   useEffect(() => {
     // Fetch brand configuration from HomePage.json
-    fetch('/HomePage.json')
+    fetch(getAssetPath('HomePage.json'))
       .then((res) => res.json())
       .then((data: HomePageConfig) => {
         if (data?.brand) {
@@ -47,7 +49,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-3 group">
             {brandConfig.logo ? (
               <Image
-                src={brandConfig.logo}
+                src={getAssetPath(brandConfig.logo)}
                 alt={`${brandConfig.name} Logo`}
                 width={60}
                 height={60}

@@ -41,14 +41,16 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
   };
 
   const handleDownload = async (url: string) => {
-    try {
-      await fetch('/api/stats', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ type: 'download', projectId: project.id }),
-      });
-    } catch (error) {
-      console.error('Failed to track download:', error);
+    if (typeof window !== 'undefined' && window.location.hostname === 'localhost') {
+      try {
+        await fetch('/api/stats', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ type: 'download', projectId: project.id }),
+        });
+      } catch (error) {
+        console.error('Failed to track download:', error);
+      }
     }
     window.location.href = url;
     onClose();
@@ -56,19 +58,23 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
 
   const handleRate = async (rating: number) => {
     if (userRated) return;
-    try {
-      const res = await fetch('/api/stats', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ type: 'rate', projectId: project.id, rating }),
-      });
-      const data = await res.json();
-      if (data.projectStats && data.projectStats[project.id]) {
-        setCurrentRating(data.projectStats[project.id].rating);
+    if (typeof window !== 'undefined' && window.location.hostname === 'localhost') {
+      try {
+        const res = await fetch('/api/stats', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ type: 'rate', projectId: project.id, rating }),
+        });
+        const data = await res.json();
+        if (data.projectStats && data.projectStats[project.id]) {
+          setCurrentRating(data.projectStats[project.id].rating);
+        }
+        setUserRated(true);
+      } catch (error) {
+        console.error('Failed to submit rating:', error);
       }
+    } else {
       setUserRated(true);
-    } catch (error) {
-      console.error('Failed to submit rating:', error);
     }
   };
 

@@ -6,6 +6,7 @@ import { Search, Filter, Shield, CheckCircle, Server, Code } from 'lucide-react'
 import ProjectCard from '@/components/downloads/ProjectCard';
 import FilterSidebar from '@/components/downloads/FilterSidebar';
 import { Project, DownloadPageData } from '@/types/project';
+import { getAssetPath } from '@/lib/utils';
 
 export default function DownloadsClient({ initialData }: { initialData: DownloadPageData | null }) {
     const searchParams = useSearchParams();
@@ -76,7 +77,7 @@ export default function DownloadsClient({ initialData }: { initialData: Download
             {/* Dynamic Background */}
             <div className="fixed inset-0 z-0 pointer-events-none">
                 <div className="absolute top-0 inset-x-0 h-[500px] bg-gradient-to-b from-[#112240] to-transparent opacity-60" />
-                <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-[0.03]" />
+                <div className="absolute inset-0 bg-repeat opacity-[0.03]" style={{ backgroundImage: `url(${getAssetPath('/grid.svg')})` }} />
             </div>
 
             {/* Hero Section */}
