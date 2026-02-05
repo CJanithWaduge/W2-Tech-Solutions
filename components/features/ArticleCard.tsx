@@ -225,7 +225,7 @@ export default function ArticleCard({ article, variant = 'default' }: ArticleCar
               </div>
               <div className="flex items-center gap-1">
                 <MessageCircle size={12} />
-                <span className="text-xs">{article.comments || 0}</span>
+                <span className="text-xs">{Array.isArray(article.comments) ? article.comments.length : (article.comments || 0)}</span>
               </div>
               <ArrowRight
                 size={16}
