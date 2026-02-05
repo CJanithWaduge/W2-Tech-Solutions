@@ -1,39 +1,16 @@
-'use client';
-
-import { useEffect, useState } from 'react';
-import { Project } from '@/types/project';
-import ProjectDetailClient from './ProjectDetailClient';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
-import { useParams } from 'next/navigation';
+import ProjectDetailClient from './ProjectDetailClient';
+import { getProjectById, getAllProjectIds } from '@/lib/data';
 
-export default function ProjectPage() {
-	const params = useParams();
-	const [project, setProject] = useState<Project | null>(null);
-	const [loading, setLoading] = useState(true);
+export async function generateStaticParams() {
+	const projects = await getAllProjectIds();
+	return projects;
+}
 
-	useEffect(() => {
-		if (!params.id) return;
-
-		fetch(`/api/projects/${params.id}`)
-			.then(res => res.json())
-			.then(data => {
-				if (!data.error) setProject(data);
-				setLoading(false);
-			})
-			.catch(err => {
-				console.error("Error fetching project:", err);
-				setLoading(false);
-			});
-	}, [params.id]);
-
-	if (loading) {
-		return (
-			<div className="min-h-screen flex items-center justify-center">
-				<div className="w-12 h-12 border-4 border-[var(--accent)] border-t-transparent rounded-full animate-spin"></div>
-			</div>
-		);
-	}
+export default async function ProjectPage({ params }: { params: Promise<{ id: string }> }) {
+	const { id } = await params;
+	const project = await getProjectById(id);
 
 	if (!project) {
 		return (
