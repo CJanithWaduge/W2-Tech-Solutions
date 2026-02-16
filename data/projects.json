@@ -2,9 +2,9 @@
   {
     "id": "agency-management-system",
     "name": "Agency Management System",
-    "version": "1.0.0",
-    "description": "A powerful desktop application for managing agency operations, inventory, sales, and financial records with interactive analytics.",
-    "longDescription": "Built for busy small business owners, this system provides a secure, offline-first environment to manage inventory, creditors, and expenses. It features a high-performance SQLite database, real-time sales visualization using Recharts, and professional PDF statement generation.",
+    "version": "1.1.0",
+    "description": "An enhanced and optimized version of the Agency Management System with improved code quality, performance optimizations, and production-ready stability.",
+    "longDescription": "Built for busy small business owners, this system provides a secure, offline-first environment to manage inventory, creditors, and expenses. It features a high-performance SQLite database, real-time sales visualization using Recharts, and professional PDF statement generation. v1.1.0 brings major improvements in code quality, component architecture, analytics, and UI/UX.",
     "category": "Business & Finance",
     "tags": [
       "React 19",
@@ -13,8 +13,8 @@
       "Tailwind CSS",
       "Data Analytics"
     ],
-    "size": "203 MB",
-    "lastUpdated": "2026-02-05",
+    "size": "1.5 MB (Bundle)",
+    "lastUpdated": "2026-02-16",
     "security": {
       "verified": true,
       "signed": true,
@@ -26,12 +26,24 @@
     ],
     "downloadLinks": {
       "windows": {
-        "url": "https://github.com/CJanithWaduge/Agency-Management-System/releases/tag/v1.0.0",
-        "size": "203 MB",
+        "url": "https://github.com/CJanithWaduge/Agency-Management-System/releases/tag/v1.1.0",
+        "size": "1.5 MB (Bundle)",
         "format": "exe"
       }
     },
     "versions": [
+      {
+        "version": "1.1.0",
+        "date": "2026-02-16",
+        "changes": [
+          "Code Quality: Fixed ESLint warnings, React hooks optimization",
+          "Architecture: CustomTooltip refactor, memoized components",
+          "Analytics: Enhanced debt aging, regional efficiency tracking",
+          "UI/UX: Improved responsive design, chart tooltips, accessibility",
+          "Production: 1.5MB optimized build, Electron cross-platform ready"
+        ],
+        "downloadUrl": "https://github.com/CJanithWaduge/Agency-Management-System/releases/tag/v1.1.0"
+      },
       {
         "version": "1.0.0",
         "date": "2026-02-05",

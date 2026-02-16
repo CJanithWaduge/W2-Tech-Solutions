@@ -44,33 +44,16 @@ export default function ProjectDetailClient({ project }: ProjectDetailClientProp
 	};
 
 	const handleDownload = async (url: string) => {
-		try {
-			await fetch('/api/stats', {
-				method: 'POST',
-				headers: { 'Content-Type': 'application/json' },
-				body: JSON.stringify({ type: 'download', projectId: project.id }),
-			});
-			setCurrentDownloads(prev => prev + 1);
-		} catch (error) {
-			console.error('Failed to track download:', error);
-		}
+		// Track download locally (static export doesn't support API routes)
+		setCurrentDownloads(prev => prev + 1);
 		window.location.href = url;
 	};
 
 	const handleRate = async (rating: number) => {
 		if (userRated) return;
-		try {
-			const res = await fetch('/api/stats', {
-				method: 'POST',
-				headers: { 'Content-Type': 'application/json' },
-				body: JSON.stringify({ type: 'rate', projectId: project.id, rating }),
-			});
-			const data = await res.json();
-			setCurrentRating(data.projectStats[project.id].rating);
-			setUserRated(true);
-		} catch (error) {
-			console.error('Failed to submit rating:', error);
-		}
+		// Update rating locally (static export doesn't support API routes)
+		setCurrentRating(rating);
+		setUserRated(true);
 	};
 
 	const isReleased = (p: Project) => {

@@ -77,6 +77,9 @@ export default function ProjectCard({ project, autoOpen }: ProjectCardProps) {
           },
           body: JSON.stringify({ type: 'rate', projectId: project.id, rating }),
         });
+        
+        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+        
         const data = await res.json();
         if (data.projectStats && data.projectStats[project.id]) {
           setCurrentRating(data.projectStats[project.id].rating);

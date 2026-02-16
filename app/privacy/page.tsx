@@ -3,13 +3,18 @@
 import { useEffect, useState, Suspense } from 'react';
 import { FileText, Calendar, CheckCircle, Shield, Lock } from 'lucide-react';
 
+import { getAssetPath } from '@/lib/utils';
+
 function PrivacyContent() {
     const [data, setData] = useState<any>(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('/Privacy.json')
-            .then((res) => res.json())
+        fetch(getAssetPath('Privacy.json'))
+            .then((res) => {
+                if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+                return res.json();
+            })
             .then((json) => {
                 setData(json);
                 setLoading(false);

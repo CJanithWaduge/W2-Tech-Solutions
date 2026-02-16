@@ -4,6 +4,8 @@ import { Mail, Github, Linkedin, MapPin, Download, Award, Code, Shield, CheckCir
 import { useEffect, useState, useRef, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 
+import { getAssetPath } from '@/lib/utils';
+
 function AboutContent() {
   const searchParams = useSearchParams();
   const isAdmin = searchParams.get('admin') === 'true';
@@ -26,16 +28,11 @@ function AboutContent() {
   useEffect(() => {
     const loadData = async () => {
       try {
-        const [aboutRes, statsRes] = await Promise.all([
-          fetch('/About.json'),
-          fetch('/api/stats')
-        ]);
-
+        const aboutRes = await fetch(getAssetPath('About.json'));
+        if (!aboutRes.ok) throw new Error(`HTTP error! status: ${aboutRes.status}`);
         const about = await aboutRes.json();
-        const stats = await statsRes.json();
-
         setAboutData(about);
-        setLiveStats(stats);
+        setLiveStats(about.stats);
       } catch (err) {
         console.error("Failed to load page data:", err);
       } finally {
@@ -129,10 +126,10 @@ function AboutContent() {
   }
 
   const stats = [
-    { icon: Calendar, value: `${aboutData.stats?.experience || 0}+`, label: 'Years Exp' },
-    { icon: Code, value: `${liveStats?.modules || aboutData.stats?.projects || 0}+`, label: 'Applications' },
-    { icon: DownloadIcon, value: `${(liveStats?.totalDownloads || 0).toLocaleString()}+`, label: 'Downloads' },
-    { icon: Award, value: `${aboutData.certifications?.length || 0}`, label: 'Certificates' }
+    { icon: Calendar, value: `${aboutData?.stats?.experience || 0}+`, label: 'Years Exp' },
+    { icon: Code, value: `${aboutData?.stats?.projects || 0}+`, label: 'Applications' },
+    { icon: DownloadIcon, value: `${(aboutData?.stats?.downloads === 'auto' ? 0 : aboutData?.stats?.downloads || 0).toLocaleString()}+`, label: 'Downloads' },
+    { icon: Award, value: `${aboutData?.certifications?.length || 0}`, label: 'Certificates' }
   ];
 
   return (
